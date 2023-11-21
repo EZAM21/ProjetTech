@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Design */
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    background-color: #f1f1f1;
+    border-bottom: double 5px #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #131A22;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #131A22; 
+}
+
+header span.orange{
+    background-color: #FBBC6A;
+    color: #131A22;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #131A22;
+}
+
+header nav ul li a:hover{
+    background-color: #FBBC6A;
+    transition: 0.5s;
+}
+
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #222;
+    width: 22px;
+    height: 22px;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    header{
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* End of Header Design */
+
+
+/* Main Design*/
+    main{
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        gap: 10px
+    }
+    
+    main .card{
+        width: 24%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+        border: solid 1px #E5E5E5;
+        border-radius: 8px;
+    }
+
+    main .card .box_image{
+        position: relative;
+    }
+
+    main .card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+/* Icon */
+main .card .box_image .icones{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    /* background-color: #131A22; */
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.fa-heart, .fa-comment-dots{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+main .card h2{
+    font-family: 'montserrat';
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+main .card h3{
+    font-family: 'montserrat';
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+.star{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Les étoiles */
+.star .fa-solid{
+    color: #FBBC6A;
+}
+
+.star span{
+    color: #131A22;
+    padding: 10px;
+}
+/* End of css main */
+
+
+/* Footer Design */
+footer{
+    padding: 20px;
+    background-color: #131A22;
+    font-family: "Monda";
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a{
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+footer ul li a span.orange{
+    background-color: #FBBC6A;
+    color: #131A22;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    footer ul li a{
+        width: 300px;
+        text-align: center;
+    }
+    
+}
+/* End of footer design */
+
+/* Media Query for the little screens (max-width: 410px)*/
+@media screen and (max-width: 410px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    header h1 a {
+        font-size: medium;
+    }
+
+    footer {
+        font-size: medium;
+    }
+
+    main {
+        display: grid;
+        gap: 5px 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .card {
+        min-width: 170px;
+    }
+} 
