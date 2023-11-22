@@ -234,6 +234,13 @@ footer ul li a span.orange{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 960px) {
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     header {
