@@ -253,6 +253,7 @@ footer ul li a span.orange{
         transition: 1s;
         border: solid 1px #E5E5E5;
         border-radius: 8px;
+        font-size: medium;
     }
 
     footer ul{
