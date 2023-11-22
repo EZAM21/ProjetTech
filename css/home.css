@@ -151,7 +151,7 @@ main .card .box_image .icones{
 
 main .card h2{
     font-family: 'montserrat';
-    font-weight: 200;
+    font-weight: bold;
     font-size: 1.1rem;
     margin: 0 0 10px 0;
     padding: 10px;
@@ -162,7 +162,7 @@ main .card h2{
 main .card h3{
     font-family: 'montserrat';
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: lighter;
     color: #555;
     margin: 0 0 10px 0;
     padding: 10px;
