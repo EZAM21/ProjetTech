@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap');
 
-body {
+* {
     margin: 0;
-    font-family: 'Monda';
-    font-family: 'Montserrat';
-} 
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 /* Début des propriétés CSS du header */
