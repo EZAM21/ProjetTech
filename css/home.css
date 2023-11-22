@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,10 +12,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background-color: #f1f1f1;
-    border-bottom: double 5px #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0px 2px .5px rgba(0, 0, 0, 0.304);
+    height: 70px;
 }
 
 header h1{
@@ -92,7 +95,7 @@ header nav ul li a:hover{
     main{
         max-width: 1200px;
         margin: auto;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -129,7 +132,7 @@ main .card .box_image .icones{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Monserrat"; */
     font-size: 12px;
     font-weight: bold;
     color: #fff;
@@ -153,24 +156,24 @@ main .card h2{
     font-family: 'montserrat';
     font-weight: bold;
     font-size: 1.1rem;
-    margin: 0 0 10px 0;
-    padding: 10px;
+    margin: 0 0 5px 0;
+    padding: 5px;
     text-align: center;
 }
-
 
 main .card h3{
     font-family: 'montserrat';
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: bold;
     color: #555;
     margin: 0 0 10px 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .star{
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1px;
+    margin-bottom: 5px;
+    white-space: nowrap;
 }
 
 /* Les étoiles */
@@ -180,8 +183,10 @@ main .card h3{
 
 .star span{
     color: #131A22;
-    padding: 10px;
+    padding: 2px;
 }
+
+
 /* End of css main */
 
 
@@ -219,7 +224,22 @@ footer ul li a span.orange{
 
 @media screen and (max-width: 768px) {
     header {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    main {
+        margin-bottom: 20px;
+    }
+
+    main .card{
+        width: 24%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+        border: solid 1px #E5E5E5;
+        border-radius: 8px;
     }
 
     footer ul{
@@ -265,6 +285,7 @@ footer ul li a span.orange{
         gap: 5px 5px;
         /* row-gap: 5px 5px; */
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
     }
 
     main .card {
@@ -279,11 +300,9 @@ footer ul li a span.orange{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
         font-weight: bold;
         color: #fff;
-        /* background-color: #131A22; */
         background: rgba(0,0,0,0.5);
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         border-radius: 10px;
