@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background: rgb(25,24,36);
     background: linear-gradient(90deg, rgba(25,24,36,1) 95%, rgba(15,15,15,1) 100%, rgba(0,212,255,1) 100%);
     /* border-bottom: 1px solid #ccc;
@@ -81,7 +81,7 @@ header nav ul li a:hover{
     main{
         max-width: 1200px;
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -151,13 +151,13 @@ main .card .box_image .icones{
 
 .infos {
     width: 100%;
-    /* border: solid 1px #E5E5E5; */
+    border: solid 1px #E5E5E5;
     border-radius: 0 0 8px 8px;
-    /* border-top: none; */
+    border-top: none;
     text-align: center;
-    height: 150px;
+    height: 155px;
     margin-bottom: 15px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .container_title{
@@ -211,13 +211,17 @@ span.barre {
     color: #FBBC6A;
 }
 
+.star i {
+    margin-right: -4px;
+}
+
 /* Les étoiles */
 /* .star .fa-solid{
 } */
 
 .star span,p {
     color: #131A22;
-    padding: 1px;
+    padding: 5px;
     font-family: "montserrat";
 }
 
@@ -250,10 +254,10 @@ footer ul li a{
 }
 
 footer ul li a span.orange{
-    background-color: #FBBC6A;
-    color: #131A22;
-    padding: 10px;
-    border-radius: 10px;
+    /* background-color: #FBBC6A; */
+    color: #fff;
+    padding: 0;
+    /* border-radius: 10px; */
 }
 
 @media screen and (max-width: 960px) {
