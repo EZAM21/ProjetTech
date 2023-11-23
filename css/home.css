@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
 
 * {
     padding: 0;
@@ -13,9 +14,10 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    background-color: #f1f1f1;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 0px 2px .5px rgba(0, 0, 0, 0.304);
+    background: rgb(25,24,36);
+    background: linear-gradient(90deg, rgba(25,24,36,1) 95%, rgba(15,15,15,1) 100%, rgba(0,212,255,1) 100%);
+    /* border-bottom: 1px solid #ccc;
+    box-shadow: 0 0px 2px .5px rgba(0, 0, 0, 0.304); */
     height: 70px;
 }
 
@@ -23,20 +25,20 @@ header h1{
     font-family: 'Monda';
     font-size: 1.5rem;
     font-weight: bold;
-    color: #131A22;
+    color: #fff;
 }
 
 header h1 a{
     text-decoration: none;
-    color: #131A22; 
+    color: #fff; 
 }
 
-header span.orange{
+/* header span.orange{
     background-color: #FBBC6A;
     color: #131A22;
     padding: 0 15px;
     border-radius: 8px;
-}
+} */
 
 header nav ul{
     display: flex;
@@ -54,7 +56,7 @@ header nav ul li a{
     padding: 15px;
     border-radius: 10px;
     transition: 0.5s;
-    color: #131A22;
+    color: #fff;
 }
 
 header nav ul li a:hover{
@@ -66,7 +68,7 @@ header nav ul li a:hover{
     display: none;
 }
 #header_burger svg{
-    stroke: #222;
+    stroke: #fff;
     width: 22px;
     height: 22px;
 
@@ -107,8 +109,8 @@ header nav ul li a:hover{
         flex-direction: column;
         align-items: center;
         transition: 1s;
-        border: solid 1px #E5E5E5;
-        border-radius: 8px;
+        /* border: solid 1px #E5E5E5;
+        border-radius: 8px; */
     }
 
     main .card .box_image{
@@ -126,7 +128,7 @@ main .card .box_image .icones{
     position: absolute;
     right: 5px;
     bottom: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     /* font-family: "Monserrat"; */
@@ -136,8 +138,8 @@ main .card .box_image .icones{
     /* background-color: #131A22; */
     background: rgba(0,0,0,0.5);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 8px;
+    padding: 0;
     
 }
 
@@ -147,26 +149,39 @@ main .card .box_image .icones{
     font-size: 15px;
 }
 
+.infos {
+    width: 100%;
+    /* border: solid 1px #E5E5E5; */
+    border-radius: 0 0 8px 8px;
+    /* border-top: none; */
+    text-align: center;
+    height: 150px;
+    margin-bottom: 15px;
+    border: solid 1px red;
+}
+
 .container_title{
     width: 100%;
 }
 
 .container_title h2{
-    font-family: 'montserrat';
+    /* font-family: 'montserrat'; */
     font-weight: bold;
     font-size: 1.1rem;
     margin: 0 0 5px 0;
     padding: 5px;
     text-align: center;
     overflow: hidden;
-    word-wrap:break-word;
-    height: 50px;
+}
+
+h2 {
+    font-family: "Monda";
 }
 
 
 
 main .card h2{
-    font-family: 'montserrat';
+    /* font-family: 'montserrat'; */
     font-weight: bold;
     font-size: 1.1rem;
     margin: 0 0 5px 0;
@@ -175,12 +190,18 @@ main .card h2{
 }
 
 main .card h3{
-    font-family: 'montserrat';
-    font-size: 1rem;
+    font-family: 'Monda';
+    font-size: 1.1rem;
     font-weight: bold;
     color: #555;
     margin: 0 0 10px 0;
     padding: 5px;
+}
+
+span.barre {
+    color: red;
+    text-decoration: line-through;
+    padding: 1px;
 }
 
 .star{
@@ -197,6 +218,7 @@ main .card h3{
 .star span,p {
     color: #131A22;
     padding: 1px;
+    font-family: "montserrat";
 }
 
 
@@ -246,6 +268,10 @@ footer ul li a span.orange{
     main .card {
         width: 30%;
     }
+
+    .infos {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -268,16 +294,10 @@ footer ul li a span.orange{
         margin-bottom: 20px;
     }
 
-    /* main .card{
-        width: 30%;
-        min-width: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: 1s;
-        border: solid 1px #E5E5E5;
-        border-radius: 8px;
-    } */
+    .infos {
+        margin-bottom: 10px;
+        font-size: .8rem;
+    }
 
     footer ul{
         width: 100%;
@@ -345,7 +365,7 @@ footer ul li a span.orange{
         position: absolute;
         right: 10px;
         bottom: 10px;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         font-size: 10px;
@@ -361,6 +381,10 @@ footer ul li a span.orange{
         margin: 10px 0;
         text-align: center;
         font-size: 15px;
+    }
+
+    .infos {
+        font-size: .75rem;
     }
     
     footer {
