@@ -72,22 +72,6 @@ header nav ul li a:hover{
 
 
 }
-
-@media screen and (max-width: 768px) {
-    
-    header{
-        justify-content: space-between;
-    }
-
-    header nav ul {
-        display: none;
-    }
-
-    #header_burger{
-        display: block;
-        cursor: pointer;
-    }
-}
 /* End of Header Design */
 
 
@@ -117,7 +101,7 @@ header nav ul li a:hover{
     }
     
     main .card{
-        width: 30%;
+        width: 24%;
         min-width: 200px;
         display: flex;
         flex-direction: column;
@@ -243,10 +227,20 @@ footer ul li a span.orange{
 
 
 @media screen and (max-width: 768px) {
-    header {
+    header{
+        justify-content: space-between;
         margin-bottom: 20px;
     }
 
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    
     main {
         margin-bottom: 20px;
     }
