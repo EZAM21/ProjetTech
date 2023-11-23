@@ -101,7 +101,7 @@ header nav ul li a:hover{
     }
     
     main .card{
-        width: 24%;
+        width: 30%;
         min-width: 200px;
         display: flex;
         flex-direction: column;
@@ -222,7 +222,7 @@ footer ul li a span.orange{
     header nav ul {
         display: none;
     }
-    
+
     #header_burger{
         display: block;
         cursor: pointer;
