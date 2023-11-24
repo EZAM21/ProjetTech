@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-        <meta charset="UTF-8">
-    <!-- Meta description here -->
-    <!-- Meta keywords  here -->
-    <script src="https://kit.fontawesome.com/02b1d6d912.js" crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css"><!-- Home design -->
-    <link rel="stylesheet" href="css/lightbox.css">
-    <script src="js/lightbox-plus-jquery.js"></script>
-    <title>Technomania.io - Home</title>
-</head>
-<body>
-    <header>
-        <h1><a href="index.html">TECHNOMANIA.<span class="orange">IO</span></a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-        <div id="header_burger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </div>
-        
-    </header>
-
-        
-    <section>
+<section>
         <div class="title">
             <h2>Hottest Products 🔥</h2>
         </div>
@@ -366,19 +332,3 @@
     
        
     </main>
-
-            <footer>
-                <ul>
-                    <!-- 
-                    <li><a href="#"><i class="fa-solid fa-scale-balanced"></i> PRIVACY POLICY</a></li>
-                    <li><a href="#"><i class="fa-solid fa-file-signature"></i> GCU</a></li>
-                    -->
-                    <li><a href="#"><i class="fa-solid fa-copyright"></i> 2023 - TECHNOMANIA.<span class="orange black">IO</span></a></li>
-                </ul>
-            </footer>
-            
-            
-            
-            
-</body>
-</html>
