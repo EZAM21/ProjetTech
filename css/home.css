@@ -155,8 +155,8 @@ main .card .box_image .icones{
     border-radius: 0 0 8px 8px;
     border-top: none;
     text-align: center;
-    height: 155px;
     margin-bottom: 15px;
+    height: 180px;
     /* border: solid 1px red; */
 }
 
