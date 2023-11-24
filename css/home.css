@@ -80,7 +80,7 @@ header nav ul li a:hover{
 /* Main Design*/
     main{
         max-width: 1200px;
-        margin: auto;
+        margin: 0 auto;
         margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
@@ -117,7 +117,7 @@ header nav ul li a:hover{
 
     main .card .box_image{
         position: relative;
-        border: solid 1px #E5E5E5;
+        /* border: solid 1px #E5E5E5; */
     }
 
     main .card img{
@@ -140,8 +140,8 @@ main .card .box_image .icones{
     font-weight: bold;
     color: #fff;
     /* background-color: #131A22; */
-    background: rgba(0,0,0,0.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); */
     border-radius: 8px;
     padding: 0;
     
@@ -195,6 +195,7 @@ main .card h2{
     padding: 5px;
     text-align: center;
     height: 60px;
+    width: auto;
 }
 
 main .card h3{
@@ -330,6 +331,18 @@ footer ul li a span.orange{
     
 }
 /* End of footer design */
+
+/* Media Query for the little screens (min-width: 620px) and (max-width: 430px)*/
+@media screen and (max-width: 620px) {
+    main .card {
+        width: 45%;
+    }
+
+    .infos {
+        margin-bottom: 10px;
+    }
+}
+
 
 /* Media Query for the little screens (max-width: 410px)*/
 @media screen and (max-width: 410px) {
